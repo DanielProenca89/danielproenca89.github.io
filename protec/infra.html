@@ -6,53 +6,20 @@
 		
 		<title>site</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
         <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
         <script src="jquery/jquery.js"></script>
            <script type="text/javascript" src="jquery/jquery.js" ></script>
+<script type="text/javascript" src="jquery/jquery.cycle.all.js" ></script>
+<script src="jquery/jquery.scrollme.js"></script>
 
-
-
-</script>
-	
 <script type="text/javascript">
-	
-var time = 60; // Tempo de digitação em mili segundos
-var atual = 0; // indice atual do bloco de texto
-var qtd; //Definimos uma variavel
-var altura= 
-$(function(){       
-    $('.textosTroca .item').hide();        
-    qtd = $('.textosTroca .item').length;       
-    setTimeout('digitaTexto('+atual+')',300);   
-});   
- 
-function digitaTexto(item){
-    $('.titulo').html('');
-    objItem = $('.textosTroca .item').eq(item);        
-    texto = ($.trim(objItem.html()));       
-    if(!objItem.attr('texto')){           
-        objItem.attr('texto',texto);            
-        objItem.html('');       
-    }               
-    stringItem = new String(objItem.attr('texto'));               
-    setTimeout('efeitoDigita(stringItem,0)',time);   
-} 
- 
-function efeitoDigita(stringItem,n){       
-    qtdLetras = stringItem.length;        
-    $('.titulo').append(stringItem[n]);               
-    if(!(n+1) < qtdLetras){           
-        setTimeout('efeitoDigita(stringItem,'+(n+1)+')',time);       
-    }else{           
-        if((atual+1) < qtd){               
-            atual++           
-        }else{               
-            atual = 0;           
-        }           
-        setTimeout('digitaTexto('+atual+')',3000);       
-    }           
-}
+jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+   });
+});
+
 
 </script>
   	
@@ -65,7 +32,7 @@ function efeitoDigita(stringItem,n){
 				<img src="imagens/logo.png" class="logo" />
 				<div  class="nb">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="empresa.html">A Empresa</a></li>
 					<li><a href="servicos.html">Produtos e serviços</a></li>
 					<li><a href="contato.html">Contato</a></li>
@@ -74,31 +41,38 @@ function efeitoDigita(stringItem,n){
 				</div>
 			</div>
 			
-			   <div class="banner">
-			   
-			   	<div id ="texto"><div class="square"><br/><br/><h1>Acredite</h1><P><h2>Você veio ao lugar certo!</h2></P></div>
-			   		
-			   		
-			   		
-			   	</div>
 			   	
-			   	</div>
-			   	
-			  
-			   <div class="container">
-			   	
-			   <div class="textosTroca">
-    <div class="item">O que você precisa para hoje?</div>        
-    
-</div>
-			 
-			   </div>
+			<div class="banner2"></div>
+			
+			<div class="texto1">
+				
+				<p><h1>Definição</h1></p>
+				<p><h4>
+					Hardware de rede, ou dispositivos de rede, referem-se aos equipamentos que facilitam e dão suporte ao uso de uma rede de computadores, ou seja, são os meios físicos necessários para a comunicação entre os componentes participantes de uma rede.
+					<p>Origem: Wikipédia</p></h4>
+				</p>
+			</div>
 	
-				<div class="titulo"><h1></h1></div>
-				
-				
+				<div class="texto2">
 					
-			<div class="containert">
+					<p><h1>NOSSO SERVIÇO</h1></p>
+					<p>A tecnologoia esta evoluindo a passos largos, levando consigo uma gama de possibilidade, principalmente no campo da comunicação.
+						Hoje, todos fazem uso de veículos de telecomunicação como celulares, computadores, tablets... No entanto, pocos sabem 
+						que sem uma infraestrutura bem organizada e bom planejamento logístico não seria possível a ultilização correta desses meios.
+						Para que a informação chegue a seu destino sem falhas é necessário uma boa estrutura física de rede. 
+						Especializados em TI (tecnologia da informação), executamos projetos de infraestrutura  de rede fazendo o serviço do zero ou trabalhando
+						na manuteção da mesma.
+						
+						</p>
+						
+				
+						 
+						
+						 
+					
+				</div>
+				
+					<div class="containert">
 			<ul>
 		<div class="teste">
 		<div class="nav1">
@@ -142,13 +116,16 @@ function efeitoDigita(stringItem,n){
 			
 		
 		</div>
-		
+		</ul>
 		
 		
 		
 		
 		
 		</div>
+				
+				
+				
 
 		</body>
 		<footer>

@@ -1,116 +1,138 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<head>
+		
+		<title>site</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
         <script src="jquery/jquery.js"></script>
-         <script>
-         $(document).ready(function(){
-         	
-         	$("#face1").attr("src",  "imagens/face.png");
-         	$("#plus1").attr("src",  "imagens/plus.png");
-         	
-         	
-            $("#face").mouseover(function(){
-            	
-            	$("#face1").attr("src",  "imagens/face1.png");
-            	
-       
-            	});
-            	
-            	$("#plus").mouseover(function(){
-            	
-            	$("#plus1").attr("src",  "imagens/plus1.png");
-            	
-       
-            	});
-            	
-            	
-            	$("#face").mouseout(function(){
-            		
-            		$("#face1").attr("src", "imagens/face.png");
-            	
-            });
-            
-            	$("#plus").mouseout(function(){
-            		
-            		$("#plus1").attr("src", "imagens/plus.png");
-            	
-            });
-         		
-         });
-         
-   </script>
-   
-   
-   
-   
-   
-   
-   
-   
-        
-        <title>ProTec</title>
-    </head>
-    <body>
-    	<div class="header">
-    		
-        <img id="logo" src="imagens/logo.png">
-     
-        
-        <div class="navbar">
-        <ul id="nb">
-        	<li><a href="index.html">Home</a></li>
-        	<li><a href="#">Serviços</a></li>
-        	<li><a href="contato.html">Contato</a></li>
-        	<li><a href="#">Saiba mais</a></li>
-        </ul>
-        
-        
-        <div class="rede">
-        <ul>
-        <li><a id="face" href="https://www.facebook.com/protecnetworkbrasil"><img id="face1" src="imagens/face1.png"></a></li>
-        <li><a id="plus" href="#"><img  id="plus1" src="imagens/plus1.png"></a></li>
-        </ul>
-      </div>
-        </div>
-        
-        <center><div id="conteudo1">
-        	<p><h1>CFTV</h1></p>
-        	<p>A sigla CFTV (circuito fechado de televisão), refere-se a instalação de câmeras de segurança para vigilância</p><p>
-        	e proteção patrimonial. Você merece ter a tranquilidade de saber que esta tudo bem com sua casa ou empresa.</p>
-        	<p><a href="contato.html">marque uma visita</a> e saiba mais!</p>
-        	<br>
-        	<br>
-        	<p><h1>Infraestrutura de rede</h1></p>
-        	<p>Infraestrutura de rede é a parte física de uma rede de telecomunicações que vai desde o cabeamento estruturado</p>
-        	<p>até a disposição dos pontos, estruturação e organização do rack, distribuição de pontos de comunicação sem fio (wi-fi)</p>
-        	<p>e principalmente, um planejamento focado na segurança.</p>
-        	<p>O que vemos hoje na maioria das empresas é a impossibilidade de parar a comunicação e assim, vão-se acumulando</p>
-        	<p>cabos, equipamentos obsoletos, que por muita vezes, não precisariam estar instalados e com isso, acabam </p>
-        	<p>gerando problemas que dificilmente são resolvidos.</p>
-        	<p>Faça seu planejamento conosco! Nós temos a solução.</p>
-        	<br>
-        	<br>
-        	<p><h1>Webservice</h1></p>
-        	<p>Webservice é o serviço voltado para divulgação e otimização da sua imagem na rede mundial de computadores.</p>
-        	<p>Nós fazemos o melhor para que você possa estar sempre aparecendo na web seja em redes sociais, blogs, websites</p>
-        	<p>ferramentas de busca (Google, bing, Yahoo...); o importante é ter sua imagem constantemente divulgada</p>
-        	<p>de forma direta e eficiente.</p>
-        	<p>Nós fazemos modelos de websites personalizados para sua firma, escritos do zero, ou seja, você nunca verá</p>
-        	<p>um site igual ao seu circulando na web.</p>
-        	<p>Focado sempre na segurança, estamos sempre fazendo analise e manutenção do seu site, afinal, nada é 100% seguro.</p>
-        	<br>
-        	<br>
-        	<p><h2><a href="contato.html">Entre em contato conosco! Temos muito mais para oferecer.</a></h2></p>
-   
+           <script type="text/javascript" src="jquery/jquery.js" ></script>
+<script type="text/javascript" src="jquery/jquery.cycle.all.js" ></script>
+<script src="jquery/jquery.scrollme.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+   });
+});
+
+
+</script>
+  	
+
         	
-        		 
-        	
-        </div></center>
-     
-        
-    </body>
+        </head>
+	
+		<body>
+			<div class="navbar">
+				<img src="imagens/logo.png" class="logo" />
+				<div  class="nb">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="empresa.html">A Empresa</a></li>
+					<li><a href="#">Produtos e serviços</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					
+				</ul>
+				</div>
+			</div>
+			
+			   	
+			
+			   <div class="container1">
+			   	
+			   	<p><h1>Serviços</h1></p>
+			   	
+			   <div class="s1">
+			   <div class="navb">
+			   	<img src="imagens/ti.png">
+			   	
+			   </div>
+			   <ul>
+			   	<p><h2>Infraestrutura de rede e configuração</h2></p>
+			   	<p>Hoje em dia, é praticamente impossível abrir uma empresa sem
+			   	que se tenha o mínimo de recursos para comunicação. Exige-se uma infraestrutura organizada que
+			   	evite falhas, que podem deixar a empresa fora de operação e causar perdas graves.
+			   	Nós compreendemos a importância e oferecemos serviços especializados em montagem de rack, cabeamento de rede estruturado,
+			   	organização e identificação de cabo com patch panel, organização física e lógica da sua rede de pequeno a grande porte.</p>	
+			   		
+			   	</ul>
+			   	</div>
+			   	
+			   	<div class="s2">
+			   <div class="navb">
+			   	<img src="imagens/banner.png">
+			   	</div>
+			   	<ul>
+			   	<p><h2>Suporte técnico e informática</h2></p>
+			   	<p>O profissional de suporte técnico é o responsável por manter os equipamentos de telecomunicação em funcionamento,
+			   	otimizando para que tenham o melhor rendimento e evitando que falhas aconteçam.
+			   	Nós temos contratos que vão de acordo com a necessidade da sua empresa e nos comprometemos a atendê-lo sempre da melhor forma
+			   	e com o máximo de agilidade.
+			    </p>	
+			   		
+			   	</ul>
+				</div>
+				
+				<div class="s3">
+			   <div class="navb">
+			   	<img src="imagens/web.png">
+			   </div>
+			   	
+			   	<ul>
+			   		<p><h2>Desenvolvimento Web e web service</h2></p>
+			   		<p>Amplie suas vendas, divulgue seu negócio e mostre-se para o mundo com o que há de mais novo em desenvolvimento de 
+			   		websites. Nós garantimos que seu site terá um design personalizado, e ao seu gosto. Conte-nos sobre a sua empresa que faremos um 
+			   		layout. Só compre se gostar! Entre em contato e faça um orçamento sem compromisso.
+			   			</p>
+			   	</ul>
+				</div>
+				
+				<div class="s4">
+			   <div class="navb">
+			   	<img src="imagens/cftv.png">
+			   </div>
+			   	
+			   	<ul>
+			   		<p><h2>Segurança Eletrônica</h2></p>
+			   		<p>Imagine ter a oportunidade de vigiar seu patrimônio de qualquer lugar do mundo e ser avisado instantaneamente de qualquer 
+			   			problema que ocorra com a segurança de sua casa. Imaginou? Pois saiba que a Protec tem a solução exata para proteger seu
+			   			patrimônio com o que há de mais moderno em câmeras de segurança e alarme. Entre em contato conosco e marque uma visita nossa
+			   			a sua empresa ou residência para nos conhecer. Teremos o prazer de lhe atender!
+			   			</p>
+			   	</ul>
+				</div>
+				</div>
+				
+			</body>
+			
+					<footer>
+			<div id="nb2">
+				
+				<ul>
+					<li>
+						<a href="#"><img src="imagens/facebook.png"></a>
+						
+					</li>
+					
+					<li>
+						<a href="#"><img src="imagens/whats.png"></a>
+						
+					</li>
+				</ul>
+				
+				
+			</div>
+			
+			<br>
+			<p>Protec Divisão de TI</p>
+			
+			
+			</footer>
+
+	
 </html>
